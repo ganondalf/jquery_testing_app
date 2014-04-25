@@ -7,7 +7,7 @@ before_script:
   - "export JASMINE_SPEC_FORMAT=documentation"
 env:
   - PG_USERNAME='postgres'
-  // put any other secret env variable inside
+  #  put any other secret env variable inside
 script:
   - "bundle exec rake db:create"
   - "bundle exec rake db:migrate RAILS_ENV=test"
