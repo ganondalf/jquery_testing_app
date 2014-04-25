@@ -5,7 +5,7 @@ describe "root page" do
       it "changes text when you click on it" do
         visit '/'
         page.find("h1", :text => "Hey Macarena").click
-        expect(page).to have_content("ANERACAM YEH")
+        expect(page).to have_content "ANERACAM YEH";
       end
    end
 end
